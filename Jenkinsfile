@@ -35,11 +35,16 @@ pipeline{
             }
         }
 
-        stage("Deploy"){
-            steps{
-                deploy()
-            }
-        }
+       
+        stage("Deploy") {
+            steps {
+                echo "Deploying application using Docker Compose"
         
+                sh '''
+                    docker compose pull django_app
+                    docker compose up -d
+                '''
+            }
+        }      
     }
 }
