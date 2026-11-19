@@ -2,10 +2,9 @@ pipeline{
     agent { label 'amit'}
     
     stages{
-        stage("Code clone"){
-            steps{
-                sh "whoami"
-            clone("https://github.com/LondheShubham153/django-notes-app.git","main")
+       stage("Code") {
+            steps {
+                echo "GitHub source code checked out successfully"
             }
         }
         stage("Code Build"){
