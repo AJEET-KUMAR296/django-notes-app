@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'dev-server'}
+    agent { label 'amit'}
     
     stages{
         stage("Code clone"){
