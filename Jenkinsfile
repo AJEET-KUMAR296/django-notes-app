@@ -4,7 +4,7 @@ pipeline{
     stages{
        stage("Code") {
             steps {
-                echo "GitHub source code checked out successfully"
+                echo "GitHub start source code checked out successfully"
             }
         }
         stage("Build") {
