@@ -44,6 +44,8 @@ pipeline{
                     docker compose pull django_app
                     docker compose up -d
                 '''
+
+                echo "Successful application deployed."
             }
         }      
     }
